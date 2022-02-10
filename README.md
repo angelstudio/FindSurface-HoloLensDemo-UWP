@@ -53,9 +53,12 @@ This app supports eye-tracking features and voice commands, both built-in featur
 <!-- Eye-gaze: https://docs.microsoft.com/en-us/windows/mixed-reality/design/eye-tracking -->
 <!-- Hand-gaze: https://docs.microsoft.com/en-us/windows/mixed-reality/design/point-and-commit -->
 
+The gazing point follows where users' eyes gaze. If the [eye-tracking](https://docs.microsoft.com/en-us/windows/mixed-reality/design/eye-tracking) feature isn't available for reasons like an inconvenience with eye-tracking or calibration failures, etc., disable the eye-tracking features in the settings panel. The app will allow users to [use their hands](https://docs.microsoft.com/en-us/windows/mixed-reality/design/point-and-commit) as an alternative to eye-tracking. If no hands are detected, the traditional way (head tracking like what users do in HoloLens 1) is used.
+
 ![gazing-point](images/HoloLens-GazingPoint.gif)
 
-The gazing point follows where users' eyes gaze. If the [eye-tracking](https://docs.microsoft.com/en-us/windows/mixed-reality/design/eye-tracking) feature isn't available for reasons like an inconvenience with eye-tracking or calibration failures, etc., disable the eye-tracking features in the settings panel. The app will allow users to [use their hands](https://docs.microsoft.com/en-us/windows/mixed-reality/design/point-and-commit) as an alternative to eye-tracking. If no hands are detected, the traditional way (head tracking like what users do in HoloLens 1) is used.
+Using the gazing point, users point to a place to detect surfaces and how large the target surface is. The circle around the gazing point implies the size of the target object to detect. Users can change the size using [the voice commands mentioned below](#parameter-adjustment).
+
 
 ### Activating FindSurface using Voice Commands
 
