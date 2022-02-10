@@ -32,6 +32,7 @@ The FindSurface library for UWP is included in the [ext](ext) directory in this 
 
 ## Prerequisites
 
+* HoloLens 2 device (HoloLens 1 is not supported)
 * Visual Studio 2019 or higher.
 * Install the [latest Mixed Reality tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
 
