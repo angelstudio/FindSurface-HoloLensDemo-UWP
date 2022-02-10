@@ -48,7 +48,7 @@ The FindSurface library for UWP is included in the [ext](ext) directory in this 
 
 This app supports eye-tracking features and voice commands, both built-in features of HoloLens2. During the holographic experiences using this app, Users gaze at target places in the space and activate FindSurface API functions using voice commands.
 
-### Gazing (Eye-tracking)
+### Gazing at target surfaces (Eye-tracking)
 
 <!-- Eye-gaze: https://docs.microsoft.com/en-us/windows/mixed-reality/design/eye-tracking -->
 <!-- Hand-gaze: https://docs.microsoft.com/en-us/windows/mixed-reality/design/point-and-commit -->
@@ -57,7 +57,7 @@ This app supports eye-tracking features and voice commands, both built-in featur
 
 The gazing point follows where users' eyes gaze. If the [eye-tracking](https://docs.microsoft.com/en-us/windows/mixed-reality/design/eye-tracking) feature isn't available for reasons like an inconvenience with eye-tracking or calibration failures, etc., disable the eye-tracking features in the settings panel. The app will allow users to [use their hands](https://docs.microsoft.com/en-us/windows/mixed-reality/design/point-and-commit) as an alternative to eye-tracking. If no hands are detected, the traditional way (head tracking like what users do in HoloLens 1) is used.
 
-### Voice Command
+### Activating FindSurface using Voice Commands
 
 To use this app, users must permit to use the mic in their device since the app heavily depends on the voice commands to activate the core features.
 When the app is launched, the system will play the alarm message "Voice command is ready" if the voice command is available. Check your mic permission on your HoloLens device if the message is not played or voice commands are not working.
