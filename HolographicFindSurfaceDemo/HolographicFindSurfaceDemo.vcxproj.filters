@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>ab669b7c-a302-4f8d-9a39-3b0c32f2a348</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>39d70b52-3d6f-4a8f-b010-6eecd3db8306</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>3bd8900d-4fcf-4810-8098-32e07f5d7a85</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>07b47301-2b28-4148-85d3-45c4e457894b</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClInclude Include="Common\CameraResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\CameraResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="ResearchMode">
+      <UniqueIdentifier>{79d38a2b-f765-4922-9430-485bd2913198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReferenceDlls">
+      <UniqueIdentifier>{3642f72f-32f9-41ee-85ad-9575e861350a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReferenceDlls\ARM">
+      <UniqueIdentifier>{2af0e9be-0544-45b8-bfe9-0beead55b973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReferenceDlls\ARM64">
+      <UniqueIdentifier>{e787cb5c-5186-4e6f-a57f-1cf22b77328f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReferenceDlls\Win32">
+      <UniqueIdentifier>{6e431b67-5fba-41da-bf6e-8f8342cb422b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReferenceDlls\x64">
+      <UniqueIdentifier>{41314b10-621f-4216-ab7b-1e7067c99342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders\PointCloud">
+      <UniqueIdentifier>{3fdb9430-5fcf-4ef4-b232-e85a911faf89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{3b25b951-944e-4d1d-8df6-cac26c1ef6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders\Mesh">
+      <UniqueIdentifier>{7e1ccafa-18d3-4dcd-b52d-69de18c97262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders\GazePoint">
+      <UniqueIdentifier>{a6b67c43-1aad-4530-9a1b-ac582a95ca1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{fe7fe40d-1505-4675-9d6a-2751ee2118fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="HolographicFindSurfaceDemoMain.cpp" />
+    <ClCompile Include="AppView.cpp" />
+    <ClCompile Include="SensorManager.cpp" />
+    <ClCompile Include="Content\PointCloudRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioFileReader.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioStreamReader.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\OmnidirectionalSound.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\MeshRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\PrimitiveFactory.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\GazePointRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="PermissionHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="FindSurfaceHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="HolographicFindSurfaceDemoMain.h" />
+    <ClInclude Include="AppView.h" />
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="ResearchMode\ResearchModeApi.h">
+      <Filter>ResearchMode</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorManager.h" />
+    <ClInclude Include="Content\PointCloudRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioFileReader.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioStreamReader.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\OmnidirectionalSound.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\XAudio2Helpers.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\MeshRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\PrimitiveFactory.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\GazePointRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="PermissionHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="FindSurfaceHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PropertySheet.props" />
+    <None Include="..\ext\FindSurfaceWinRT\lib\ARM\FindSurfaceWinRT.dll">
+      <Filter>ReferenceDlls\ARM</Filter>
+    </None>
+    <None Include="..\ext\FindSurfaceWinRT\lib\ARM64\FindSurfaceWinRT.dll">
+      <Filter>ReferenceDlls\ARM64</Filter>
+    </None>
+    <None Include="..\ext\FindSurfaceWinRT\lib\x64\FindSurfaceWinRT.dll">
+      <Filter>ReferenceDlls\x64</Filter>
+    </None>
+    <None Include="..\ext\FindSurfaceWinRT\lib\Win32\FindSurfaceWinRT.dll">
+      <Filter>ReferenceDlls\Win32</Filter>
+    </None>
+    <None Include="Content\PCRVertexShaderShared.hlsl">
+      <Filter>Content\Shaders\PointCloud</Filter>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Content\MeshConstantBuffer.hlsl">
+      <Filter>Content\Shaders\Mesh</Filter>
+    </None>
+    <None Include="Content\MeshVertexShaderShared.hlsl">
+      <Filter>Content\Shaders\Mesh</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HolographicFindSurfaceDemo_TemporaryKey.pfx" />
+    <None Include="Content\VertexShaderShared.hlsl">
+      <Filter>Content\Shaders\GazePoint</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\GeometryShader.hlsl">
+      <Filter>Content\Shaders\GazePoint</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\PixelShader.hlsl">
+      <Filter>Content\Shaders\GazePoint</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\VertexShader.hlsl">
+      <Filter>Content\Shaders\GazePoint</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\VPRTVertexShader.hlsl">
+      <Filter>Content\Shaders\GazePoint</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\PCRVertexShader.hlsl">
+      <Filter>Content\Shaders\PointCloud</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\PCRVPRTVertexShader.hlsl">
+      <Filter>Content\Shaders\PointCloud</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\PCRGeometryShader.hlsl">
+      <Filter>Content\Shaders\PointCloud</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\PCRPixelShader.hlsl">
+      <Filter>Content\Shaders\PointCloud</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\MeshPixelShader.hlsl">
+      <Filter>Content\Shaders\Mesh</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\MeshGeometryShader.hlsl">
+      <Filter>Content\Shaders\Mesh</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\MeshVertexShader.hlsl">
+      <Filter>Content\Shaders\Mesh</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\MeshVprtVertexShader.hlsl">
+      <Filter>Content\Shaders\Mesh</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Audio\BasicResultsEarcon.wav">
+      <Filter>Assets</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
