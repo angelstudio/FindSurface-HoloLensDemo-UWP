@@ -105,13 +105,32 @@ The supported commands (English only) are as follow:
 |---------------|-------------|
 | `"<size> size"` | Change the `seed radius` to fit various sized objects. The supported sizes are **very small**, **small**, **normal (general or medium)**, **large**, and **very large**. For example, say `"normal size"`, `"general size"` or `"medium size"` to fit normal sized objects. |
 | `"reset size"` | Reset the `seed radius` size to the default size `"normal size"`. |
-| `"<error-level> error"` | Change the current error level for target surfaces to the given error-level. The supported levels are **high**, **normal**, and **low**. |
+| `"<error-level> error"` | Change the current noise level of point clouds for target surfaces to the given error-level. The supported levels are **high**, **normal**, and **low**. The noise level helps enhance the detection rate of `FindSurface` using heuristic strategies. Refer to [the Noise Levels sub-section](#noise-levels) below for more details. |
 
 > In terms of the `"size"`, `"one"` will do the same. For example, Saying `"very small one"` is equivalent to saying `"very small size"`.
 
-See the measurement accuracy description for details on how the error works in [this document](https://github.com/CurvSurf/FindSurface#how-does-it-work).
+>##### **Noise Levels**
+>See the measurement accuracy description for details on how the error works in [this document](https://github.com/CurvSurf/FindSurface#how-does-it-work). 
+>
+>To determine an appropriate value of the measurement accuracy parameter, we built a linear model of normal noise for the app: 
+>
+>````
+>normal_error(distance) = a + b * distance 
+>// the distance is in millimeters.
+>````
+>
+>Taking a hint from [this paper](https://doi.org/10.3390/s20041021) (especially the figure 8a), we set the values of `a = 2` and `b = 1.2` for the normal (expected) noise model as a result of our experiments and introduced an additional constant value `c = 1`, of which the value has been arbitrarily determined, to derive the following variations of the model: 
+>
+>````
+>lower_error(distance) = normal_error(distance) - c
+>higher_error(distance) = normal_error(distance) + c
+>````
+>
+>The app calculates a concrete value of the *a priori* error according to the distance and the error level that users set.
 
-## About Source Codes
+
+
+## About the Source Codes
 
 This application source code is based on a [DX11 template app](https://docs.microsoft.com/windows/mixed-reality/creating-a-holographic-directx-project) source code. The change that has been made is as follows:
 
