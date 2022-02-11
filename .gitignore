@@ -2,8 +2,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudio
 
-!ext/*
-
 ### macOS ###
 # General
 .DS_Store
@@ -57,11 +55,11 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
+#x64/
+#x86/
+#[Ww][Ii][Nn]32/
+#[Aa][Rr][Mm]/
+#[Aa][Rr][Mm]64/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -435,3 +433,22 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudio
+
+!x64/
+![Ww][Ii][Nn]32/
+![Aa][Rr][Mm]/
+![Aa][Rr][Mm]64/
+
+x64/*
+[Ww][Ii][Nn]32/*
+[Aa][Rr][Mm]/*
+[Aa][Rr][Mm]64/*
+
+!ext/FindSurfaceWinRT/lib/ARM/FindSurfaceWinRT.lib
+!ext/FindSurfaceWinRT/lib/ARM/FindSurfaceWinRT.dll
+!ext/FindSurfaceWinRT/lib/ARM64/FindSurfaceWinRT.lib
+!ext/FindSurfaceWinRT/lib/ARM64/FindSurfaceWinRT.dll
+!ext/FindSurfaceWinRT/lib/Win32/FindSurfaceWinRT.lib
+!ext/FindSurfaceWinRT/lib/Win32/FindSurfaceWinRT.dll
+!ext/FindSurfaceWinRT/lib/x64/FindSurfaceWinRT.lib
+!ext/FindSurfaceWinRT/lib/x64/FindSurfaceWinRT.dll
