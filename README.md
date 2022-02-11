@@ -109,24 +109,25 @@ The supported commands (English only) are as follow:
 
 > In terms of the `"size"`, `"one"` will do the same. For example, Saying `"very small one"` is equivalent to saying `"very small size"`.
 
->##### **Noise Levels**
->See the measurement accuracy description for details on how the error works in [this document](https://github.com/CurvSurf/FindSurface#how-does-it-work). 
->
->To determine an appropriate value of the measurement accuracy parameter, we built a linear model of normal noise for the app: 
->
->````
->normal_error(distance) = a + b * distance 
->// the distance is in millimeters.
->````
->
->Taking a hint from [this paper](https://doi.org/10.3390/s20041021) (especially the figure 8a), we set the values of `a = 2` and `b = 1.2` for the normal (expected) noise model as a result of our experiments and introduced an additional constant value `c = 1`, of which the value has been arbitrarily determined, to derive the following variations of the model: 
->
->````
->lower_error(distance) = normal_error(distance) - c
->higher_error(distance) = normal_error(distance) + c
->````
->
->The app calculates a concrete value of the *a priori* error according to the distance and the error level that users set.
+#### **Noise Levels**
+
+See the measurement accuracy description for details on how the error works in [this document](https://github.com/CurvSurf/FindSurface#how-does-it-work). 
+
+To determine an appropriate value of the measurement accuracy parameter, we built a linear model of normal noise for the app: 
+
+````
+normal_error(distance) = a + b * distance 
+// the distance is in millimeters.
+````
+
+Taking a hint from [this paper](https://doi.org/10.3390/s20041021) (especially the figure 8a), we set the values of `a = 2` and `b = 1.2` for the normal (expected) noise model as a result of our experiments and introduced an additional constant value `c = 1`, of which the value has been heuristically determined, to derive the following variations of the model: 
+
+````
+lower_error(distance) = normal_error(distance) - c
+higher_error(distance) = normal_error(distance) + c
+````
+
+The app calculates a concrete value of the *a priori* error according to the distance and the error level that users set.
 
 
 
