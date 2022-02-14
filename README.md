@@ -63,14 +63,14 @@ Using the gazing point, users point to a place to detect surfaces and how large 
 
 ### Activating FindSurface using Voice Commands
 
-To use this app, users must permit to use the mic in their device since the app heavily depends on the voice commands to activate the core features.
-When the app is launched, the system will play the alarm message "Voice command is ready" if the voice command is available. Check your mic permission on your HoloLens device if the message is not played or voice commands are not working.
+To use this app, users must permit to use the mic in their devices since the app heavily depends on the voice commands to activate the core features.
+When the app is launched, the system will play the alarm message "Voice command is ready" if the voice command is available. Check the mic permission on your HoloLens device if the message is not played or the voice commands are not working.
 
 ![Activate-FindSurface](images/HoloLens-ActivateFindSurface.gif))
 
-Once `FindSurface` is activated, it tries to keep detecting a surface that matches the given type from the point cloud of the scene. Whenever `FindSurface` detects a matching surface, `MeshRenderer` will render a surface mesh corresponding to the matching type for every detection result. Users can capture the snapshot of the surface in space by saying "capture" or "catch it." The `Mesh Renderer` visualizes those captured surfaces detected in augmented reality rendering.
+Once `FindSurface` is activated, it tries to keep detecting a surface that matches the given type from the point cloud of the scene. Whenever `FindSurface` detects a matching surface, `MeshRenderer` will render a surface mesh corresponding to the matching type for every detection result. Users can capture the snapshot of the surface and hold it in the place by saying "capture" or "catch it." The `Mesh Renderer` visualizes those captured surfaces in augmented reality rendering.
 
-The supported commands (English only) are as follow:
+The supported commands (English only) are as follows:
 
 #### **Activating/Deactivating FindSurface**
 
@@ -133,7 +133,7 @@ The app calculates a concrete value of the *a priori* error according to the dis
 
 ## About the Source Codes
 
-This application source code is based on a [DX11 template app](https://docs.microsoft.com/windows/mixed-reality/creating-a-holographic-directx-project) source code. The change that has been made is as follows:
+This application source code is based on a [DX11 template app](https://docs.microsoft.com/windows/mixed-reality/creating-a-holographic-directx-project) source code. The changes that have been made are as follows:
 
 | File/folder | Action | Description |
 |-------------|--------|-------------|
