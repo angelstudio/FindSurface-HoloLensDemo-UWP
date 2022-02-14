@@ -58,7 +58,7 @@ The gazing point follows where users' eyes gaze. If the [eye-tracking](https://d
 
 ![gazing-point](images/HoloLens-GazingPoint.gif)
 
-Using the gazing point, users point to a place to detect surfaces and how large the target surface is. The circle around the gazing point implies the size of the target object to detect. Users can change the size using [the voice commands mentioned below](#parameter-adjustment).
+Using the gazing point, users point to a place to detect surfaces and how large the target surface is. The circle around the gazing point implies the expected size of the target object to detect. Users can change the size using [the voice commands listed below](#parameter-adjustment).
 
 
 ### Activating FindSurface using Voice Commands
@@ -68,7 +68,7 @@ When the app is launched, the system will play the alarm message "Voice command 
 
 ![Activate-FindSurface](images/HoloLens-ActivateFindSurface.gif))
 
-Once `FindSurface` is activated, it tries to keep detecting a surface that matches the given type from the point cloud of the scene. Whenever `FindSurface` detects a matching surface, `MeshRenderer` will render a surface mesh corresponding to the matching type for every detection result. Users can capture the snapshot of the surface and hold it in the place by saying "capture" or "catch it." The `Mesh Renderer` visualizes those captured surfaces in augmented reality rendering.
+Once `FindSurface` is activated, it tries to keep detecting a surface that matches [the given type](#activatingdeactivating-findsurface) from the point cloud of the scene. Whenever `FindSurface` detects a matching surface, `MeshRenderer` will render a surface mesh corresponding to the matching type for every detection result. Users can capture the snapshot of the surface and hold it in the place by saying "capture" or "catch it." The `MeshRenderer` visualizes those captured surfaces in augmented reality rendering.
 
 The supported commands (English only) are as follows:
 
@@ -85,7 +85,7 @@ The supported commands (English only) are as follows:
 
 | Voice Command | Description |
 |---------------|-------------|
-| `"capture"` | (While `FindSurface` is activated) Take a snapshot of the current found surface to hold it on to the space. Saying `"catch it"` or `"catch that"` will do the same. |
+| `"capture"` | (While `FindSurface` is activated) Take a snapshot of the currently found surface to hold it onto the space. Saying `"catch it"` or `"catch that"` will do the same. |
 | `"undo"` |  Remove the last appended surface mesh from `Mesh Renderer`. Saying `"remove last one"` will do the same. |
 | `"clear"` |  Remove all surface meshes from `Mesh Renderer`. Saying `"remove all"` will do the same. |
 
@@ -95,7 +95,7 @@ The supported commands (English only) are as follows:
 | Voice Command | Description |
 |---------------|-------------|
 | `"show/hide point cloud"` | Show/hide point clouds. |
-| `"show/hide cursor"` | Show/hide the gazing point and seed radius circle. Saying `"gaze cursor"`, `"gaze point"`, or `"UI"` after `"show/hide"` will do the same instead of saying `"cursor"`. |
+| `"show/hide cursor"` | Show/hide the gazing point and seed radius circle. Saying `"gaze cursor"`, `"gaze point"`, or `"UI"` instead of saying `"cursor"` after `"show/hide"` will do the same. |
 | `"show/hide all"` | Show/hide both point cloud and gaze UI. |
 
 
@@ -127,7 +127,7 @@ lower_error(distance) = normal_error(distance) - c
 higher_error(distance) = normal_error(distance) + c
 ````
 
-The app calculates a concrete value of the *a priori* error according to the distance and the error level that users set.
+The app calculates a value of the *a priori* error according to the distance and the error level that users set.
 
 
 
@@ -150,8 +150,8 @@ This application source code is based on a [DX11 template app](https://docs.micr
 | `Content\ShaderStructures.h` | Update | Added `InstanceConstantBuffer` for `MeshRenderer`. |
 | `Content\PCR****.hlsl` | Add | Shader sources for `Point Cloud Renderer`. |
 | `Content\Mesh****.hlsl` | Add | Shader sources for `Mesh Renderer`. |
-| `Content\PrimitiveFactory.h/cpp` | Add | A helper class that creates unit primitives (plane, sphere, cylinder). |
-| `Content\SpatialInputHandler.h/cpp` | Remove | This demo supports voice commands only, but not spatial input methods. |
+| `Content\PrimitiveFactory.h/cpp` | Add | A helper class that creates unit primitives meshes (plane, sphere, cylinder) for rendering. |
+| `Content\SpatialInputHandler.h/cpp` | Remove | This demo supports voice commands only, not spatial input methods. |
 | `HolographicFindSurfaceDemoMain.h/cpp` | Update | See `HolographicFindSurfaceDemoMain::Update(HolographicFrame const&)` for details on how to handle `FindSurface` API. |
 
 
