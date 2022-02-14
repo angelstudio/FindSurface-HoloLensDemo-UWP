@@ -11,7 +11,7 @@ products:
 
 # FindSurface-HoloLensDemo-UWP (C++)
 
-**Curv*Surf** FindSurface™* HoloLensDemo for UWP (C++) 
+***CurvSurf** FindSurface™* HoloLensDemo for UWP (C++) 
 
 
 ## Overview
